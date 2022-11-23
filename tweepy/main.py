@@ -15,7 +15,8 @@ ACCESS_TOKEN_SECRET = os.environ.get('ACCESS_TOKEN_SECRET')
 client = tweepy.Client(consumer_key= CONSUMER_KEY, consumer_secret= CONSUMER_KEY_SECRET, access_token= ACCESS_TOKEN,
         access_token_secret= ACCESS_TOKEN_SECRET)
 
+#Making a Tweet to launch off
+# client.create_tweet(text='Bot dev testing')
 
-#Create a tweet 
-client.create_tweet(text= 'Tweeted using tweepy :)')
+client.get_bookmarks()
 
