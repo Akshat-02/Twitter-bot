@@ -9,10 +9,11 @@ CONSUMER_KEY = os.environ.get('CONSUMER_KEY')
 CONSUMER_KEY_SECRET = os.environ.get('CONSUMER_KEY_SECRET')
 ACCESS_TOKEN = os.environ.get('ACCESS_TOKEN')
 ACCESS_TOKEN_SECRET = os.environ.get('ACCESS_TOKEN_SECRET')
+BEARER_TOKEN = os.environ.get('BEARER_TOKEN')
 
 
 #Authenticating to Twitter for API v2 using CLient class
-client = tweepy.Client(consumer_key= CONSUMER_KEY, consumer_secret= CONSUMER_KEY_SECRET, access_token= ACCESS_TOKEN,
+client = tweepy.Client(bearer_token= BEARER_TOKEN, consumer_key= CONSUMER_KEY, consumer_secret= CONSUMER_KEY_SECRET, access_token= ACCESS_TOKEN,
         access_token_secret= ACCESS_TOKEN_SECRET)
 
 #Making a Tweet to launch off
